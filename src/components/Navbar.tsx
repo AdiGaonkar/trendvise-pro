@@ -168,7 +168,7 @@ const NavLinks = ({ isMobile }: { isMobile: boolean }) => {
         href="https://wa.me/918850279928"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:text-dealwise-green transition-colors text-blue-500 border-2 p-2 px-2 rounded-lg"
+        className="hover:text-white bg-green-500 hover:bg-green-600 transition-colors text-white border-2 p-2 px-2 rounded-lg"
       >
         WhatsApp Us
       </a>
