@@ -6,7 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious
 } from '@/components/ui/carousel';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Star } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -15,32 +15,37 @@ const Testimonials = () => {
     {
       name: 'Rajesh Kumar',
       role: 'Retail Investor',
-      content: 'The market research alerts from DealWisePro have been incredibly accurate...',
+      content: 'The market research alerts from TrendvisePro have been incredibly accurate...',
       initials: 'RK',
-      rating: 5
+      rating: 5,
+      image: '/images/rajesh.jpg'  // <-- Add image path here
     },
     {
       name: 'Priya Sharma',
       role: 'Business Owner',
       content: 'The personalized investment strategy created for my business...',
       initials: 'PS',
-      rating: 5
+      rating: 5,
+      image: '/images/priya.jpg'
     },
     {
       name: 'Amit Patel',
       role: 'Day Trader',
       content: 'Their technical analysis and timely alerts are perfect...',
       initials: 'AP',
-      rating: 4
+      rating: 4,
+      image: '/images/amit.jpg'
     },
     {
       name: 'Sunita Verma',
       role: 'Long-term Investor',
       content: 'As someone focused on long-term wealth creation...',
       initials: 'SV',
-      rating: 5
+      rating: 5,
+      image: '/images/sunita.jpg'
     }
   ];
+
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const slideCount = testimonials.length;
@@ -74,9 +79,11 @@ const Testimonials = () => {
                 <Card className="bg-white shadow-md hover:shadow-lg transition-shadow duration-300 h-full">
                   <CardContent className="p-6 flex flex-col h-full">
                     <div className="flex items-center mb-4">
-                      <Avatar className="h-12 w-12 mr-4 bg-dealwise-blue text-white">
+                      <Avatar className="h-12 w-12 mr-4">
+                        <AvatarImage src={testimonial.image} alt={testimonial.name} />
                         <AvatarFallback>{testimonial.initials}</AvatarFallback>
                       </Avatar>
+
                       <div>
                         <p className="font-medium text-dealwise-blue">{testimonial.name}</p>
                         <p className="text-sm text-gray-500">{testimonial.role}</p>
