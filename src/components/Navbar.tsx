@@ -165,7 +165,7 @@ const NavLinks = ({ isMobile }: { isMobile: boolean }) => {
       </Link>
 
       <a
-        href="https://wa.me/918850279928"
+        href="https://wa.me/917710089851"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-white bg-green-500 hover:bg-green-600 transition-colors text-white border-2 p-2 px-2 rounded-lg"
