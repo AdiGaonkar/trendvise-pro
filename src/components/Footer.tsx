@@ -62,7 +62,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center">
                 <PhoneCall size={18} className="mr-2 text-dealwise-green" />
-                <span>+91 8850279928</span>
+                <span>+91 7710089851</span>
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="mr-2 text-dealwise-green" />
@@ -88,7 +88,7 @@ const Footer = () => {
               <a href="#" className="hover:text-dealwise-green transition-colors">
                 <Linkedin size={24} />
               </a>
-              <a href="#" className="hover:text-dealwise-green transition-colors">
+              <a href="https://www.instagram.com/trendvisepro?igsh=MXBrMW4yZXA5OTl2dg%3D%3D" className="hover:text-dealwise-green transition-colors">
                 <Instagram size={24} />
               </a>
             </div>
